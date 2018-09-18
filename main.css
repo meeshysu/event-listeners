@@ -1,0 +1,16 @@
+.blue {
+    background-color: blue;
+}
+
+.large {
+    font-size: 40px;
+}
+
+.bordered {
+    border: 2px dashed salmon;
+}
+
+.rounded {
+    border-radius: 6px;
+    border: 2px solid black;
+}

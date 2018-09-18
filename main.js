@@ -64,8 +64,8 @@ header.addEventListener("mouseout", handleHeaderMouseOut)
  */
 var fieldEl = document.getElementById("keypress-input")
 
-fieldEl.addEventListener("keyup", function (event) {
-    outputEl.innerHTML = event.target.value
+fieldEl.addEventListener("keyup", function (e) {
+    outputEl.innerHTML = e.target.value
 })
 
 
@@ -112,5 +112,19 @@ document.getElementById("add-rounding").addEventListener("click", function() {
   elements in one function.
  */
 document.querySelector("body").addEventListener("click", function(event) {
-    console.log("You clicked on the body of the DOM")
+    
+
+    if (event.target.classList.contains('article-selection')) {
+        // poke();
+        alert("You clicked on the body of the DOM")
+    }
 })
+
+
+
+const myFriendsElems = document.getElementsByClassName('friends');
+for (let i = 0; i <  myFriendsElems.length; i++) {
+    const element = myFriendsElems[i];
+
+    element.addEventListener('click', poke);
+}
