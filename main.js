@@ -20,18 +20,19 @@ const activateDeletes = () => {
         })
     }
 }
-
+//you can also use the query body click listening function ('it is in the night class sources for event listener notes) instead of the for loop. use an 'if' statement. listen to this and 'if' you hear the click, delete this. 
+//if (event.target.classList.contains('deleteButton'))
 
 printToDom = (stringToPrint, whereToPrint) => {
     document.getElementById(whereToPrint).innerHTML += stringToPrint;
 }
 
 const buildNewToDoCard = (toDo, notes) => {
-    let domString = `<div class="card" style="width: 18rem;">
+    let domString = `<div class="card w-25 m-2">
     <div class="card-body">
     <h5 class="card title">${toDo}</h5>
       <p class="card-text">${notes}</p>
-      <a href="#" class="btn btn-primary deleteButton">Delete This Ugly Shit MEOW</a>
+      <a href="#" class="btn btn-info deleteButton">Delete This Ugly Shit MEOW</a>
      </div>
   </div>`;
     printToDom(domString, "toDooCards");
