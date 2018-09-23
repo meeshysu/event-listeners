@@ -1,3 +1,4 @@
+
 .blue {
     background-color: blue;
 }
@@ -14,3 +15,8 @@
     border-radius: 6px;
     border: 2px solid black;
 }
+
+body {
+    background-color: aquamarine;
+}
+
